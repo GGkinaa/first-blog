@@ -3,4 +3,6 @@ from . import views
 
 urlpatterns = [
 	path('',views.post_list, name='post_list'),
+	path('(post/<int:pk>)/',views.post_details, name='post_details'),
+	#path('/blog/pili',views.pili, name = 'pili'),
 ]
